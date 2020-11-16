@@ -1,0 +1,80 @@
+// サイト全体の設定、変数の定義など
+// color
+$white: #fafafa; //TAKさん
+$white: #fff; //TAKさん
+// $white: #fff; //今回
+// $black: #333; //TAKさん
+$black: #111; //今回
+// //案件ごとに設定
+// $base: #0056e4;
+// $main: #0056e4;
+// $main: #DABB4D;
+$main: #133E92;
+$sub: #ffea00;
+$top_color: #065fe3;
+$top_baner:#cddff9;
+$merit: #def3fb;
+
+
+
+
+$light: #EBEBEB;
+// $dark: ;
+$gray: #A5A5A5;
+
+$blue: #1E71E0;
+$red: #FF4646;
+$yellow: #FFAA3B;
+
+// レイアウト幅
+$layout-width-inner: 1180px;
+// ブレークポイント
+$breakpoints: (
+  "xsp": "screen and (max-width: 414px)",//iphone 6 plus
+  "sp": "screen and (max-width: 768px)",//ハニワマン https://haniwaman.com/breakpoint/
+  "tab": "screen and (max-width: #{$layout-width-inner - 1px})",
+  "pc": "screen and (min-width: 768px)",
+  // "pc": "screen and (min-width: #{$layout-width-inner})",
+);
+
+// メディアクエリー
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+// innerの設定
+$main-width :1140px;
+$main-padding :24px;
+$mod-padding: 80px;
+$sub-padding :$main-padding + $mod-padding;
+$max-width: $main-width + $main-padding*2;
+$mod-width: $main-width - $mod-padding;
+.inner {
+  width: 100%;
+  max-width: $max-width; //自由に変更 1140px
+  margin: 0 auto;
+  padding: 0 $main-padding 0 $sub-padding;
+  @include mq('tab') {
+    padding: 0 $main-padding 0 $sub-padding;
+  }
+  @include mq('sp') {
+    padding: 0 16px;
+  }
+}
+
+// // innerの設定
+// $main-width:1140px;
+// .inner {
+//   width: 100%;
+//   max-width: calc(1140px + 24px*2); //自由に変更 1140px
+//   margin: 0 auto;
+//   padding: 0 24px 0 104px;
+//   @include mq('tab') {
+//     padding: 0 24px 0 104px;
+//   }
+//   @include mq('sp') {
+//     padding: 0 16px;
+//   }
+// }

@@ -1,0 +1,26 @@
+// mixin や extendを記述する。　多くなってきたら、分割も検討
+
+// fontsize
+@mixin fz($size){
+  font-size: $size + px;
+  font-size: ($size/10) * 1rem;
+}
+
+// gradiention
+@mixin linear-grandient($color:#f00, $way:top, $percent:20%){
+  background-color: $color;
+  background-image: -webkit-linear-gradient($way, $color 0%, lighten($color, $percent) 100%);
+  background-image: -moz-linear-gradient($way, $color 0%, lighten($color, $percent) 100%);
+  background-image: linear-gradient($way, $color 0%, lighten($color, $percent) 100%);
+// background-image:
+//   repeating-linear-gradient(
+//     90deg,
+//     #a9ceec ,
+//     #a9ceec 1px,
+//     transparent 1px,
+//     transparent 3px
+//   )
+
+
+
+}

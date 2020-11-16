@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!--
+    prefix と type は、
+    トップページの場合websiteまたはblog、下層ページはarticleです。
+  -->
+<head prefix="og: http://ogp.me/ns# website: http://ogp.me/ns/website#">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>中谷株式会社</title>
+  <meta name="description" content="中谷株式会社はオーダーメイドのユニフォーム専門店です。創業以来、一着一着を大切にするオーダーメイドのコンセプトによって、大手百貨店をはじめ、多くの信頼を頂いております。">
+  <meta property="og:site_name" content="中谷株式会社">
+  <meta property="og:description" content="中谷株式会社はオーダーメイドのユニフォーム専門店です。創業以来、一着一着を大切にするオーダーメイドのコンセプトによって、大手百貨店をはじめ、多くの信頼を頂いております。
+" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://sora3.sakura.ne.jp/update/nakatani/img/top_mv.png" />
+  <meta property="og:url" content="https://sora3.sakura.ne.jp/update/nakatani" />
+
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./sass/style.min.css">
+  <link rel="stylesheet" href="./swiper/swiper.css">
+
+</head>
+
+<body>
+  <div id="stalker">
+    <img src="./img/face_president.png" alt="">
+  </div>
+  <div id="loadingBg">
+    <div id="loading">
+      <div class="loading__logo mincho">NAKATANI</div>
+      <div id="percent" class="mincho"><span>LOADING...</span><span id="percent-text"></span></div>
+      <div id="gauge"></div>
+    </div>
+    <img src="./img/logo.png" alt="" style="display: none;">
+    <img src="./img/logo.png" alt="" style="display: none;">
+    <img src="./img/logo.png" alt="" style="display: none;">
+    <img src="./img/logo.png" alt="" style="display: none;">
+    <img src="./img/logo.png" alt="" style="display: none;">
+    <img src="./img/logo.png" alt="" style="display: none;">
+    <img src="./img/logo.png" alt="" style="display: none;">
+    <img src="./img/logo.png" alt="" style="display: none;">
+  </div>
+
+  <!-- <div class="wrap_overFlow"></div> -->
+  <header class="header">
+    <h1 class="header__ttl">
+      <a href="./">
+        <!-- <p class="header__ttl__txt lato">NAKATANI</p> -->
+        <img src="./img/logo.png" alt="NAKATANI">
+      </a>
+    </h1>
+    <div class="header__video">
+      <!-- <video src="img/top_mv.mp4" muted autoplay loop playsinline></video> -->
+      <!-- <div class="video__black"></div> -->
+      <div class="swiper-container" style="height: 100vh;">
+        <div class="swiper-wrapper">
+
+          <p class="swiper-slide">
+            <img class="object-fit" src="./img/swiper/top_mv1.jpg" alt="">
+          </p>
+          <p class="swiper-slide">
+            <img class="object-fit" src="./img/swiper/top_mv2.jpg" alt="">
+          </p>
+          <p class="swiper-slide">
+            <img class="object-fit" src="./img/swiper/top_mv3.jpg" alt="">
+          </p>
+        </div>
+        <!-- Add Pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+
+    </div>
+    <div class="header__txt">
+      <p class="header__txt--main lato">MORE FREEDOM<br>IN UNIFORMS</p>
+      <p class="header__txt--sub">制服を、もっと自由に</p>
+    </div>
+    <div class="pc__right lato">
+      <p class="po___right--txt">SINCE 1918</p>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="nav__ctt">
+      <div class="nav__menu">
+        <span class="nav__menu--toggle js-nav__menu--toggle">
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
+      </div>
+      <div class="nav__ctt--pc lato">
+        <a href="./index.html" class="nav__txt">
+          <p class="">NAKATANI COROPRATION.</p>
+        </a>
+        <div class="nav__scroll">
+          <p>SCROLL</p>
+          <!-- スクロールアイコン -->
+          <span class="arrow"></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="sideber">
+    <div class="inner">
+      <div class="sideber__ctt">
+        <a class="sideber__box js-sideber-off" href="about.html">
+          <p class="sideber__box__ttl lato">ABOUT US</p>
+          <p class="sideber__box__txt">中谷について</p>
+        </a>
+        <a class="sideber__box js-sideber-off" href="./product.html">
+          <p class="sideber__box__ttl lato">PRODUCT</p>
+          <p class="sideber__box__txt">中谷の商品について</p>
+        </a>
+        <a class="sideber__box js-sideber-off" href="./recruit.html">
+          <p class="sideber__box__ttl lato">RECRUIT</p>
+          <p class="sideber__box__txt">採用情報</p>
+        </a>
+        <a class="sideber__box js-sideber-off" href="./blog.html">
+          <p class="sideber__box__ttl lato">BLOG</p>
+          <p class="sideber__box__txt">社長の日常</p>
+        </a>
+        <a class="sideber__box js-sideber-off" href="./news.html">
+          <p class="sideber__box__ttl lato">NEWS&TOPICS</p>
+          <p class="sideber__box__txt">新着情報</p>
+        </a>
+        <!-- <a class="sideber__box js-sideber-off" href="./contact.html">
+          <p class="sideber__box__ttl lato">CONTACT</p>
+          <p class="sideber__box__txt">お問い合わせ</p>
+        </a> -->
+        <a class="btn" href="./entry.html">
+          <p>ENTRY</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <main>
+    <section class="about js-fadein " id="about">
+      <div class="inner">
+        <div class="about__ctt">
+          <p class="about__img">
+              <img src="./img/about.png" alt="">
+          </p>
+          <div class="about__boxes">
+            <h2 class="about__ttl lato">ABOUT<br>US</h2>
+            <p class="about__ttl--sub">中谷について</p>
+            <p class="about__txt">
+              創業以来、100年にわたり、ユニフォームの企画・製造・販売を行なっております。
+            </p>
+            <a class="about__btn btn" href="./about.html">MORE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product js-fadein " id="product">
+      <div class="inner">
+        <div class="product__ctt">
+          <p class="product__img">
+              <img src="./img/product.jpg" alt="">
+          </p>
+          <div class="product__boxes">
+            <h2 class="product__ttl lato">PRODUCT</h2>
+            <p class="product__ttl--sub">中谷の商品について</p>
+            <p class="product__txt">
+              当社では、オーダーメイドとカタログコーディネートの大きく２つの方法で制服の企画・製造を行なっております。
+            </p>
+            <a class="product__btn btn" href="./product.html">MORE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="message " id="message">
+      <h2 class="message__ttl lato">MESSAGE</h2>
+      <div class="message__ctt">
+        <div class="inner">
+          <p class="message__txt lato">100年企業の更なる飛躍へ向けた挑戦！<br><br>
+            私たちは、創業以来100年以上、<br>
+            ワークウェアの企画・製造・販売に携わってきました。<br>
+            100年超の歴史を有する企業だからこそ、<br>
+            これからも更なる挑戦を続け成長し続けます。
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="recruit js-fadein " id="recruit">
+      <div class="inner">
+        <div class="recruit__ctt">
+          <p class="recruit__img">
+                  <img src="./img/recruit.jpg" alt="">
+              </p>
+          <div class="recruit__boxes">
+            <h2 class="recruit__ttl lato">RECRUIT</h2>
+            <p class="recruit__ttl--sub">当社の採用情報は<br>
+            こちらから</p>
+            <a class="recruit__btn btn" href="./recruit.html">MORE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog js-fadein " id="blog">
+      <div class="inner">
+        <div class="blog__ctt">
+          <p class="blog__img">
+                  <img src="./img/blog_1.png" alt="">
+              </p>
+          <div class="blog__boxes">
+            <h2 class="blog__ttl lato">BLOG</h2>
+            <p class="blog__ttl--sub">社長の日常<br>
+            こちらから</p>
+            <a class="blog__btn btn" href="./blog.html">MORE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <section class="news" id="news">
+      <div class="inner">
+        <div class="news__ctt">
+          <p class="news__ttl">NEWS</p>
+          <div class="news__boxes">
+            <div class="news__box">
+              <p class="news__time">2020.11.4</p>
+              <p class="news__txt">ホームページをリニューアルいたしました。</p>
+            </div>
+          </div>
+          <a href="./" class="btn">MORE</a>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+  </main>
+  <div class="inner">
+    <div class="footer__map">
+      <div class="footer__map__box js-fadein">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.978163755847!2d135.63231701566613!3d34.68050058043975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60012053ce78f085%3A0x651c6c9934b9d612!2z44CSNTc5LTgwMTMg5aSn6Ziq5bqc5p2x5aSn6Ziq5biC6KW_55-z5YiH55S677yX5LiB55uu77yU4oiS77yV!5e0!3m2!1sja!2sjp!4v1600090875523!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <div class="footer__map__txtBox">
+        <p class="footer__map__txtBox__ttl">本社</p>
+        <p class="footer__map__txtBox__txt">〒540-0024<br>大阪府東大阪市西石切町７丁目４−５
+</p>
+        <a href="https://goo.gl/maps/onA46sHWM9TjRtb18" class="btn">Google Map →</a>
+
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="inner">
+
+
+      <div class="div footer__log">
+        <a class="footer__logo--img" href="./index.html">
+          <img src="./img/logo.png" alt="NAKATANI">
+        </a>
+      </div>
+
+      <div class="footer__ctt">
+        <div class="footer__access">
+          <div class="footer__access-ctt">
+            <p class="footer__access-ttl lato">ADRESS</p>
+            <p class="footer__access-txt">〒540-0024<br>
+            大阪府大阪市中央区南新町1-3-3</p>
+            <p class="footer__access-ttl lato">TEL</p>
+            <p class="footer__access-txt">(06)6943-1129</p>
+            <p class="footer__access-ttl lato">FAX</p>
+            <p class="footer__access-txt">(06)6941-2920</p>
+          </div>
+        </div>
+        <ul class="footer__boxes">
+          <li class="footer__box"><a href="./about.html">
+              <span class="lato">ABOUT US</span>
+              <br>
+              中谷について
+            </a></li>
+          <li class="footer__box"><a href="./product.html">
+              <span class="lato">PRODUCT</span>
+              <br>
+              中谷の商品について
+            </a></li>
+          <li class="footer__box"><a href="./recruit.html">
+              <span class="lato">RECRUIT</span>
+              <br>
+              採用情報
+            </a></li>
+          <li class="footer__box"><a href="./blog.html">
+              <span class="lato">BLOG</span>
+              <br>
+              社長の日常
+            </a></li>
+          <li class="footer__box"><a href="./news.html">
+              <span class="lato">NEWS&TOPICS</span>
+              <br>
+              新着情報
+            </a></li>
+          <!-- <li class="footer__box"><a href="./contact.html">
+              <span class="lato">CONTACT</span>
+              <br>
+              お問い合わせ
+            </a></li> -->
+        </ul>
+
+      </div>
+      <p class="footer__signiture">Copyright &copy; NAKATANI COROPRATION.</p>
+    </div>
+  </footer>
+
+
+
+
+  <!-- jQuery min-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="./js/app.js"></script>
+  <script type="text/javascript" src="./js/loading.js"></script>
+
+
+  <!-- objectFitImages -->
+  <script src="js/ofi.min.js"></script>
+  <script>
+    objectFitImages('img.object-fit');
+  </script>
+  <!-- Swiper JS -->
+  <script src="./swiper/swiper.js"></script>
+  <script type="text/javascript" src="./swiper/mySwiper.js"></script>
+</body>
+</html>
